@@ -8,6 +8,9 @@
 </header>
 
 <main>
+  @if(error()){
+    <app-error-modal  title="An Error occured" [message]="error()"/>
+  }
   <app-available-places />
 
   <app-user-places />
